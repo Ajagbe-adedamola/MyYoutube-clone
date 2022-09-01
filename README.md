@@ -1,2 +1,2 @@
 # YOUTUBE CLONE
-This is my first big like project i want honest options
+This is my first big like project i want honest opinion
