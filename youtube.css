@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px 50px 1fr;
+    font-family: 'Roboto', Arial;
+    font-size: 15px;
+    /* padding: 5px; */
+    /* border: 1px solid black; */
+}
+
+
+
+/* NAVIGATION SECTION  STYLING*/
+
+.nav-section {
+    /* background-color: yellow; */
+    grid-column: 1/2;
+    grid-row: 1/4;
+    position: fixed;
+    /* scrollbar-width: ; */
+    /* scrollbar-base-color: ; */
+    background-color: #fff;
+}
+
+.nav-section .nav-house {
+    overflow-y: scroll;
+    height: 600px;
+}
+
+
+.nav-section .nav-items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+    /* align-items: center; */
+    padding: 10px 0;
+    /* border: 1px solid black; */
+}
+
+.nav-section .youtube-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+
+.nav-section .youtube-box .yt-logotextbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-section .youtube-box .yt-logotextbox sup {
+    font-size: 10px;
+    font-weight: 100;
+}
+
+
+.nav-section .nav-items div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* align-items: center; */
+    padding: 5px;
+}
+
+.nav-section .nav-items .home {
+    background-color: #93939351;
+}
+
+.nav-section .nav-items div:hover {
+    background-color: #93939351;
+}
+
+
+.nav-section .nav-items a,
+span {
+    text-decoration: none;
+    color: #181818;
+
+}
+
+.nav-section .nav-items svg {
+    height: 20px;
+    width: 20px;
+}
+
+.nav-section .nav-items .subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px;
+}
+
+.nav-section .nav-items h5 {
+    font-size: 13px;
+    color: #4c4545;
+    padding: 10px;
+}
+
+.nav-section .nav-items .subscribe img {
+    border-radius: 100px;
+}
+
+
+
+
+
+/* HEADER SECTION STYLING */
+
+/* Top Header */
+
+.topheader {
+    grid-column: 2/3;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    /* padding: 5px;
+    margin-top: 5px; */
+    background-color: #fff;
+    /* background-color: aqua; */
+    position: sticky;
+    top: 0;
+    height: 50px;
+}
+
+.topheader .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+
+}
+
+.topheader .searchbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-left: 130px;
+    padding: 3px;
+
+}
+
+.topheader .searchbox form {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    border: 1px solid #93939351;
+    border-radius: 30px;
+}
+
+.topheader .searchbox form input {
+    height: 100%;
+    width: 600px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    background-color: #eaeaea;
+}
+
+.topheader .searchbox form input:focus {
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #00000044;
+}
+
+.topheader .searchbox form input [placeholder] {
+    font-size: 16px;
+}
+
+.topheader .searchbox form button {
+    border: none;
+    height: 100%;
+    border-radius: 0 30px 30px 0;
+}
+
+.topheader .searchbox form button:hover {
+    cursor: pointer;
+}
+
+.topheader .searchbox .microphone {
+    background-color: #eaeaea;
+    padding: 10px;
+    border-radius: 30px
+}
+
+
+.topheader .notifications {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-left: 180px;
+}
+
+
+/* Bottom Header */
+
+.bottomheader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    overflow-x: scroll;
+    position: fixed;
+    top: 50px;
+    padding: 6px 0;
+    background-color: #fff;
+    /* background-color: pink; */
+    border-top: 1px solid #93939317;
+    border-bottom: 1px solid #93939317;
+
+}
+
+.bottomheader::-webkit-scrollbar {
+    display: none;
+}
+
+.bottomheader::-moz-scrollbar {
+    display: none;
+}
+
+.bottomheader a {
+    text-decoration: none;
+    color: #000;
+    border-radius: 100px;
+    background-color: #eaeaea;
+    padding: 5px 10px;
+    flex-shrink: 0;
+    border: 1px solid #93939351;
+}
+
+.bottomheader a:nth-child(1) {
+    background-color: #000;
+    color: #fff;
+}
+
+.bottomheader a:hover {
+    background-color: #93939351;
+}
+
+
+
+
+/* CONTENT SECTION STYLING (VIDEOS) */
+
+.content {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #f7f7f7;
+    /* padding: 10px 10px; */
+    margin: 5px 15px;
+    height: fit-content;
+}
+
+.content .box {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 5px; */
+}
+
+.content .box:hover,
+.content .box:active {
+    cursor: pointer;
+    border: 1px solid #93939351;
+    border-radius: 3px;
+}
+
+.content .box img {
+    height: 150px;
+    width: inherit;
+}
+
+.content .box video {
+    height: 150px;
+    overflow: hidden;
+}
+
+.content .box .viddetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.content .box .viddetails img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+}
+
+
+.content .box .vidright {
+    /* background-color: #873d22; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 5px;
+}
+
+
+.content .box .vidright p {
+    font-size: 12px;
+    color: #4c4545;
+    line-height: 1.5;
+}

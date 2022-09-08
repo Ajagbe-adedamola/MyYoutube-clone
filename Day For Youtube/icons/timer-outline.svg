@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="timer" viewBox="0 0 512 512"><title>Timer</title><path d="M112.91 128A191.85 191.85 0 0064 254c-1.18 106.35 85.65 193.8 192 194 106.2.2 192-85.83 192-192 0-104.54-83.55-189.61-187.5-192a4.36 4.36 0 00-4.5 4.37V152" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M233.38 278.63l-79-113a8.13 8.13 0 0111.32-11.32l113 79a32.5 32.5 0 01-37.25 53.26 33.21 33.21 0 01-8.07-7.94z"/></svg>
+          <div class="content"><div class="videos">
+            <!-- a video starts -->
+              <div class="video">
+                 <div class="thumbnail">
+                    <img src="https://img.youtube.com/vi/zUwB_imVjmg/maxresdefault.jpg" alt="" />
+                  </div>
+          
+                    <div class="details">
+                       <div class="author">
+                          <img src="https://yt3.ggpht.com/bpzY-S4DYlbTeOpY5hIA7qz_hcbMkgvLAugtwKBGTTImNnWAGudX0y53bo_fJZ0auypxrWkUiw=s88-c-k-c0x00ffffff-no-rj" alt="" />
+                       </div>
+                       <div class="title">
+                          <h3>
+                              Introverts & Content Creation | Sumudu Siriwardana
+                           </h3>
+                           <a href="">
+                                  Francesco Ciulla
+                            </a>
+                            <span> 2M Views • 3 Months Ago </span>
+                       </div>
+                     </div>
+          
+                   </div>
+             <!-- a video Ends -->
+           </div>
+          </div>
